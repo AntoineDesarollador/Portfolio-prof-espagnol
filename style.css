@@ -1,5 +1,9 @@
 
-/*- GENERAL */
+/*,  MOBILE FIRST */
+
+
+
+/*! GENERAL */
 
 :root {
     --primary-color-- : #bf0000;
@@ -9,6 +13,8 @@
 
 body {
     margin: 0px auto;
+    box-sizing: border-box;
+    margin: 0px;
 }
 
 a, li {
@@ -18,6 +24,7 @@ a, li {
     font-family: var(--font-link--);
     color: var(--primary-color--);
     font-weight: bold;
+    font-size: 1em;
 }
 
 a {
@@ -56,7 +63,7 @@ ul li:hover{
 }
 
 img {
-    width: 130px;
+    width: 150px;
 }
 
 /*! WRAPPER */
@@ -64,33 +71,39 @@ img {
 
 
 #wrapper {
-    background-color: whitesmoke;
-    display: flex;
-    width: 100%;
+    background-image: url(img/bckprofil1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: unset;
+    background-position: center;
     height: 100%;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    width: 100%;
+    border-top: 3px outset var(--primary-color--);
+    border-bottom: 3px outset var(--primary-color--);
 }
 
 h1 {
-    font-size: 7em;
-    margin: 50px auto;
+    margin: 40px auto;
 }
+
+.cols {
+    padding: 20px 40px;
+}
+
 
 .topline {
     color: var(--primary-color--);
+    font-size: 3em;
 }
 
 .MultiText {
     color: var(--secondary-color--);
-    text-transform: capitalize;
+    font-size: 3.5em;
 }
 
-.cols {
-    width: 50%;
-    padding: 30px;
-}
 
 #button {
     width: 100%;

@@ -48,16 +48,13 @@
             <div id="wrapper">
 
                 <div class="cols cols0">
-
-                    <h1> <span class="topline">Hola,</span> <br> <span class="MultiText">¿Que tal?</span></h1>
-
-
+                    <h1> <span class="topline">Hola,</span> <br> <span class="MultiText"></span></h1>
                     <div id="button">
                         <button>Télécharger mon CV</button>
                     </div>
-
                 </div>
 
+           
             </div>
 
 
@@ -82,6 +79,18 @@
 
         <section id="Contact"></section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typingEffect = new Typed(".MultiText", {
+        strings : ["¿Que tal?", "Me llamo Antoine.", "Soy profesor.", "Soy traductor."],
+        loop : true,
+        typeSpeed : 90,
+        backSpeed : 70,
+        backDelay : 1500,
+    })
+    </script>
     
 </body>
 </html>
