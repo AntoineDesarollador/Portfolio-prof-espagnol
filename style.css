@@ -1,0 +1,115 @@
+
+/*- GENERAL */
+
+:root {
+    --primary-color-- : #bf0000;
+    --secondary-color-- : #ffac2f;
+    --font-link-- : "Roboto" "Open-Sans";
+}
+
+body {
+    margin: 0px auto;
+}
+
+a, li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-family: var(--font-link--);
+    color: var(--primary-color--);
+    font-weight: bold;
+}
+
+a {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+
+
+
+/*! HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+ul {
+    display: flex;
+
+}
+
+ul li {
+    border-bottom: 1px solid #ffac2f;
+}
+
+ul li:hover a 
+ {
+    color: var(--secondary-color--);
+}
+
+ul li:hover{
+    border-bottom: 2px solid var(--primary-color--);
+}
+
+img {
+    width: 130px;
+}
+
+/*! WRAPPER */
+
+
+
+#wrapper {
+    background-color: whitesmoke;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 7em;
+    margin: 50px auto;
+}
+
+.topline {
+    color: var(--primary-color--);
+}
+
+.MultiText {
+    color: var(--secondary-color--);
+    text-transform: capitalize;
+}
+
+.cols {
+    width: 50%;
+    padding: 30px;
+}
+
+#button {
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid var(--secondary-color--);
+    border-radius: 5px;
+    background-color: rgb(115, 33, 33);
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-link--);
+
+}
+
+button:hover {
+    background-color: #bf0000;
+    box-shadow: 1px 1px 5px 1px grey;
+}
