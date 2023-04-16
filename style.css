@@ -11,10 +11,19 @@
     --font-link-- : "Roboto" "Open-Sans";
 }
 
-body {
-    margin: 0px auto;
+html, body {
+    width:100%;
+overflow-x:hidden;
+}
+
+body * {
     box-sizing: border-box;
-    margin: 0px;
+    padding: 0;
+
+}
+
+body {
+    margin: 0;
 }
 
 a, li {
@@ -38,32 +47,88 @@ a {
 /*! HEADER */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 30px;
+
+    padding: 10px 0px 0px;
 }
 
-ul {
-    display: flex;
+/*, NAV BURGER*/
 
+.mobile-container {
+    max-width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+    /* height: 500px; */
+    color: rgb(0, 0, 0);
+    /* border-radius: 10px; */
 }
 
-ul li {
-    border-bottom: 1px solid #ffac2f;
-}
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+  }
 
-ul li:hover a 
- {
+
+
+.topnav li {
+    margin: 0px;
+    width: 100%;
+    border: 0.5px solid rgb(255, 255, 255);
+}
+  
+  .topnav #myLinks {
+    display: none;
+    background-color: whitesmoke;
+    padding: 5px 0px;
+    margin: 0;
+  }
+  
+  .topnav a {
+    color: black;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    text-transform: inherit;
+    font-family: var(--font-link--);
+    font-size: 1.2em;
+    font-weight: 400;
+    display: block;
+
+  }
+  
+  .topnav a.icon {
     color: var(--secondary-color--);
-}
+    font-size: x-large;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ffffff;
+    color: var(--primary-color--);
+  }
+  
+  .active {
+    background-color: white;
+    color: var(--primary-color--);
+  }
 
-ul li:hover{
-    border-bottom: 2px solid var(--primary-color--);
+  #myLinks i{
+    color: var(--secondary-color--);
+    font-size: 1em;
+  }
+
+
+#Navigation li {
+    border: none;
 }
 
 img {
     width: 150px;
+    display: block;
+    margin: auto;
 }
 
 /*! WRAPPER */
@@ -71,11 +136,10 @@ img {
 
 
 #wrapper {
-    background-image: url(img/bckprofil1.png);
+    background-image: url(img/BackBanner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-origin: unset;
-    background-position: center;
+    background-position: right;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -86,7 +150,7 @@ img {
 }
 
 h1 {
-    margin: 40px auto;
+    margin: 40px auto 20px;
 }
 
 .cols {
@@ -96,19 +160,21 @@ h1 {
 
 .topline {
     color: var(--primary-color--);
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .MultiText {
     color: var(--secondary-color--);
-    font-size: 3.5em;
+    font-size: 1.5em;
+    background-color: rgba(243, 243, 243, 0.4);
+    border-radius: 10px;
 }
 
 
 #button {
     width: 100%;
     position: relative;
-    left: 150px;
+
 }
 
 button {
