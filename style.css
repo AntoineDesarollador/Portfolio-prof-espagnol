@@ -41,6 +41,29 @@ a {
     letter-spacing: 1px;
 }
 
+i {
+        color: var(--secondary-color--);
+        font-size: 1em;
+        margin-right: 5px;
+}
+
+
+h2 {
+    text-align: center;
+    color: var(--primary-color--);
+    font-size: 2em;
+}
+
+h3 {
+    color: var(--secondary-color--);
+    font-size: 1.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+}
+
+p {
+    text-align: center;
+}
 
 
 
@@ -115,10 +138,6 @@ header {
     color: var(--primary-color--);
   }
 
-  #myLinks i{
-    color: var(--secondary-color--);
-    font-size: 1em;
-  }
 
 
 #Navigation li {
@@ -155,18 +174,19 @@ h1 {
 
 .cols {
     padding: 20px 40px;
+    text-align: center;
+    margin: 40px auto 20px;
 }
 
 
 .topline {
     color: var(--primary-color--);
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 .MultiText {
     color: var(--secondary-color--);
-    font-size: 1.5em;
-    background-color: rgba(243, 243, 243, 0.4);
+    font-size: 1.7em;
     border-radius: 10px;
 }
 
@@ -192,3 +212,46 @@ button:hover {
     background-color: #bf0000;
     box-shadow: 1px 1px 5px 1px grey;
 }
+
+/*! SECTION LANGUE ESPAGNOL */
+
+
+#spain img {
+    width: 90%;
+    object-fit: fill;
+    
+}
+
+#diapo h2 {
+    margin-bottom: 10px;
+}
+
+
+/*! ABOUT */
+
+#About {
+    padding: 30px 0px;
+}
+
+
+
+#About img {
+    width: 10em;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+#Contact {
+    text-align: center;
+}
+
+#Contact .fa-whatsapp {
+    font-size: 3em;
+    color: lightgreen;
+}
+
+#Contact .fa-at {
+    font-size: 3em;
+    color: blue;
+}
+
